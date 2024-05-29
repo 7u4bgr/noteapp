@@ -1,0 +1,150 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.flexs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.flexs input {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.flexs input:focus {
+  border-color: #007bff;
+}
+.flexs button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.flexs button:hover {
+  background-color: #0056b3;
+}
+
+.notes {
+  width: 100%;
+}
+.notes .notesmap {
+  margin-bottom: 20px;
+}
+.notes .notesmap .editingdiv {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+.notes .notesmap .editingdiv textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+.notes .notesmap .editingdiv textarea:focus {
+  border-color: #28a745;
+}
+.notes .notesmap .editingdiv button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.notes .notesmap .editingdiv button:hover {
+  background-color: #218838;
+}
+.notes .notesmap .normaldiv {
+  display: flex;
+  justify-content: space-between;
+  animation: slideIn 0.5s ease;
+}
+.notes .notesmap .normaldiv textarea {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+.notes .notesmap .normaldiv .normaldivflexs {
+  display: flex;
+  gap: 10px;
+}
+.notes .notesmap .normaldiv .normaldivflexs button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.notes .notesmap .normaldiv .normaldivflexs button.button1 {
+  background-color: #ffc107;
+  color: #212529;
+}
+.notes .notesmap .normaldiv .normaldivflexs button.button1:hover {
+  background-color: #e0a800;
+}
+.notes .notesmap .normaldiv .normaldivflexs button.button2 {
+  background-color: #dc3545;
+  color: #fff;
+}
+.notes .notesmap .normaldiv .normaldivflexs button.button2:hover {
+  background-color: #c82333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .notes .notesmap .normaldiv {
+    flex-direction: column;
+  }
+  .notes .notesmap .normaldiv textarea {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .notes .notesmap .normaldiv .normaldivflexs {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .notes .notesmap .normaldiv .normaldivflexs button {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=index.module.css.map */
